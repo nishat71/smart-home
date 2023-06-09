@@ -7,12 +7,13 @@ import { toast } from 'react-toastify';
 
 const Shop = () => {
   const products = useContext(ProductContext);
-  // const [cart,setCart] = useState([]);  localstorage teke shop e data pay na refresh dile
+  // const [cart,setCart] = useState([]); //  localstorage teke shop e data pay na refresh dile
   const[cart,setCart] = useContext(CartContext)   //ai cart directly context teke antesi, cart er initial value holo initialCart ja localstorage teke ashtese
   console.log(cart)
   
+  
   const handleAddToCart = (product) =>{
-    console.log(product);
+    // console.log(product);
    
     let newCart = [];
     const exists = cart.find((existingProduct)=> existingProduct.id === product.id)

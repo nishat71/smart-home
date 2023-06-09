@@ -3,7 +3,7 @@ import { getStoredCart } from "../utils/fakeDB";
 export const ProductsAndCartData = async () => {
     //get products
     const productsData = await fetch("products.json");
-    const products = await productsData.json();
+    const products = await productsData.json(); //json teke object e convert kora lagbe
 
 
 
